@@ -8,7 +8,7 @@
   print(type(nums))
 
 
-2. Abosolute Method == abs
+2. Absolute Method == abs
 
   => converting negetive to positive.
   nums = -3
@@ -17,6 +17,7 @@
 
 
 3. list Methods == append, insert, pop, remove, sorted(), count(), max(), min()
+   => Mutable
 
   nums = list()          # or [] => creation of empty list
   nums.append(1)
@@ -35,6 +36,7 @@
 
 
 4. Strings Methods  => lower(), upper(), title(), split(), count()
+=> Immutable
 
 name = "ProgramminG IN tELugu"
 print(name.lower())
@@ -53,6 +55,7 @@ Programming In Telugu
 
 
 5.Set Methods:- 
+
 nums = set()    or {} or {1,2,3,1} == {1,2,3}
 
 nums.add(1)
@@ -61,7 +64,8 @@ nums.remove(2)
 print(nums)   # {1}
 
 
-6. Dictionary Methods:-
+6. Dictionary Methods:- .keys(), .values(), .items(), .update(), .get(key), .pop(), del
+
 nums= dict()
 nums[1] = 2
 
@@ -73,10 +77,34 @@ for value in nums.values():
 
 for key, value in nums.items():
   print(key, value)
+nums.update({2:4})
+print(nums.get(1))
 print(nums)
 
 OUTPUT:-
 1
-2
-1 2
-{1: 2}
+2     # value
+1 2   # items
+2     # value
+{1: 2, 2: 4} 
+
+
+7. Tuples:-
+
+   nums = (1,1,1)
+   nums.count(1)
+   print(nums)
+
+8. Zip Method :-
+   => To read two list values at a time.
+
+   nums = [1,2,3,4]
+   nums1 = [5,6,7,8]
+   for i, j in zip(nums, nums1):
+       print(i, j)
+
+   OUTPUT:-
+   1 5
+   2 6
+   3 7
+4 8
