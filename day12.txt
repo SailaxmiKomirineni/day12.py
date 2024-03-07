@@ -89,7 +89,7 @@ OUTPUT:-
 {1: 2, 2: 4} 
 
 
-7. Tuples:-
+7. Tuples:- max, min, sum, count, indexing
 
    nums = (1,1,1)
    nums.count(1)
@@ -107,4 +107,31 @@ OUTPUT:-
    1 5
    2 6
    3 7
-4 8
+   4 8
+
+9. Enumerate Method :-
+   => Print Index and value
+  nums = [1,2,34,5]
+  for i in range(len(nums)):
+      print(i, nums[i])
+  print("*****")
+  for i, v in enumerate(nums):
+      print(i, v)
+  output:-
+  0 1
+  1 2
+  2 34
+  3 5
+  *****
+  0 1
+  1 2
+  2 34
+  3 5
+
+
+10. Round Method :- 
+nums = 1.2345
+print(round(nums,2))  ## 1.23
+
+11. Power Method :-
+print(pow(2,3))  ## 8
