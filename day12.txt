@@ -6,14 +6,18 @@
   nums = float(nums)
   nums = int(nums)
   print(type(nums))
-  
+
+
 2. Abosolute Method == abs
+
   => converting negetive to positive.
   nums = -3
   print(abs(nums))
   ==> 3
 
+
 3. list Methods == append, insert, pop, remove, sorted(), count(), max(), min()
+
   nums = list()          # or [] => creation of empty list
   nums.append(1)
   nums.append(2)
@@ -29,4 +33,50 @@
   nums = ["apple", "hello", "bat"]     #['apple', 'hello', 'bat'] 
   print(nums)
 
-4.
+
+4. Strings Methods  => lower(), upper(), title(), split(), count()
+
+name = "ProgramminG IN tELugu"
+print(name.lower())
+print(name.upper())
+print(name.title())
+## converting string to list
+print(name.split(" "))   #  ['ProgramminG', 'IN', 'tELugu']
+## converting list to string
+print("".join(name))     # ProgramminG IN tELugu
+print(name.count(i)) # if spaces are their only ProgramminG "i" are counted ==>1 else ==> 2
+
+OUTPUT :-
+programming in telugu
+PROGRAMMING IN TELUGU
+Programming In Telugu
+
+
+5.Set Methods:- 
+nums = set()    or {} or {1,2,3,1} == {1,2,3}
+
+nums.add(1)
+nums.add(2)
+nums.remove(2)
+print(nums)   # {1}
+
+
+6. Dictionary Methods:-
+nums= dict()
+nums[1] = 2
+
+for key in nums.keys():
+   print(key)
+
+for value in nums.values():
+   print(value)
+
+for key, value in nums.items():
+  print(key, value)
+print(nums)
+
+OUTPUT:-
+1
+2
+1 2
+{1: 2}
