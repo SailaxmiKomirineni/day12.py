@@ -16,7 +16,7 @@
   ==> 3
 
 
-3. list Methods == append, insert, pop, remove, sorted(), count(), max(), min()
+3. list Methods == append, insert, pop, remove, sorted(), count(), max(), min(), sum()
    => Mutable
 
   nums = list()          # or [] => creation of empty list
